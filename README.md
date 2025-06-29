@@ -109,13 +109,13 @@ curl -X DELETE http://127.0.0.1:8000/api/files/1/delete/
 Response: 204 with no content.
 
 **File Storage**
-Files are saved in MEDIA_ROOT/uploads/YYYY/MM/DD/.
+- Files are saved in MEDIA_ROOT/uploads/YYYY/MM/DD/.
 
-The file_url in responses points to the downloadable file (e.g., /media/uploads/2025/06/29/test.txt).
+- The file_url in responses points to the downloadable file (e.g., /media/uploads/2025/06/29/test.txt).
 
 **Testing**
 The project includes unit tests for all endpoints. To run the tests:
-bash
+
 ```
 python manage.py test
 ```
